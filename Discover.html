@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Isabella Rodriguez</title>
+  <link rel="stylesheet" href="./Discover.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: #B2EBF2;">
+
+<div id="home-content" class="container">
+  <div class="navbar">
+    <button class="nav-btn" onclick="window.location.href='Home.html'">Home</button>
+    <button class="nav-btn" onclick="window.location.href='Meals.html'">Meals</button>
+    <button class="nav-btn" onclick="window.location.href='Discover.html'">Discover</button>
+    <button class="nav-btn" onclick="window.location.href='Profile.html'">Profile</button>
+  </div>
+
+  <div class="content">
+    <h1>Discover Page</h1>
+    <p>Welcome to the Discover page!</p>
+    <p>This page is designed to provide you with valuable information and resources to support your journey towards a healthier lifestyle.</p>
+    <p>Here you will find daily recommendations, wellness videos, and featured articles aimed at enhancing your well-being.</p>
+    <p>Remember, maintaining a healthy lifestyle is essential for your physical and mental well-being. By making small, positive changes in your daily routine, you can improve your overall quality of life.</p>
+    <h2>Here's how to use it:</h2>
+    <p>1. Explore the daily recommendations to discover simple tips for a healthier lifestyle.</p>
+    <p>2. Watch wellness videos to learn new exercises, relaxation techniques, and healthy cooking recipes.</p>
+    <p>3. Read the featured articles to gain insights into nutrition, fitness, and overall wellness.</p>
+    <p>4. Stay consistent and committed to your health goals. Remember that every small step counts towards a healthier you!</p>
+    
+    <!-- Existing content (Daily Recommendations, Wellness Videos, and Featured Articles) remains unchanged -->
+    
+     <h2>Wellness Videos</h2>
+    <div class="wellness-videos">
+      <!-- Add your wellness videos here -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      <!-- Add more videos as needed -->
+    </div>
+    <div class="article-container">
+      <img src="https://images.unsplash.com/photo-1470163395405-d2b80e7450ed?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ1MzY3MDN8&ixlib=rb-4.0.3&q=85" alt="Article 1 Image">
+      <h3>5 Tips for a Healthier Lifestyle</h3>
+
+      <p>Discover simple yet effective ways to improve your overall well-being.</p>
+      <div class="container">
+        <!-- Your content here -->
+        <button class="back-btn" onclick="goBack()">Go to article</button>
+      </div>
+
+    </div>
+    <div class="article-container">
+      <img src="https://images.unsplash.com/photo-1610415946035-bad6fc9f5b8e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ1MzY3MDN8&ixlib=rb-4.0.3&q=85" alt="Article 2 Image">
+      <h3>10 Superfoods to Boost Your Immune System</h3>
+
+      <p>Explore a variety of nutrient-rich foods that can strengthen your immune system.</p>
+      <div class="container">
+        <!-- Your content here -->
+        <button class="back-btn" onclick="goBack()">Go to article</button>
+      </div>
+
+
+    </div>
+    <div class="article-container">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQ1MzY3Mzd8&ixlib=rb-4.0.3&q=85" alt="Article 3 Image">
+      <h3>Effective Home Workouts for Beginners</h3>
+      <p>Learn beginner-friendly exercises you can do at home to stay active and healthy.</p>
+
+      <div class="container">
+        <!-- Your content here -->
+        <button class="back-btn" onclick="goBack()">Go to article</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Example</title>
+  <style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #00BCD4; /* Cyan */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back-btn:hover {
+    background-color: #0097A7; /* Darker cyan on hover */
+  }
+</style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Example</title>
+  <style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #00BCD4; /* Cyan */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back-btn:hover {
+    background-color: #0097A7; /* Darker cyan on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Your content here -->
+  <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.location.href = "Home.html";
+  }
+</script>
+
+</body>
+</html>

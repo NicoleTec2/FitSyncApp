@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="loginsignup.css">
+  <link rel=""
+</head>
+<body>
+
+<div class="container">
+  <div id="signup-form" class="form-container">
+    <h2>Sign Up</h2>
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email Address">
+    <input type="password" id="password" placeholder="Password">
+    <input type="number" id="age" placeholder="Age" class="hidden">
+    <select id="gender" class="hidden">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+    <input type="number" id="weight" placeholder="Weight (kg)" class="hidden">
+    <input type="number" id="height" placeholder="Height (cm)" class="hidden">
+    <select id="goal" class="hidden">
+      <option value="lose">Lose Fat</option>
+      <option value="maintain">Maintain Weight</option>
+      <option value="gain">Gain Weight</option>
+    </select>
+    <input type="number" id="weight-goal" placeholder="Weight Goal (kg)" class="hidden">
+    <input type="text" id="illness" placeholder="Preexisting Illness" class="hidden">
+    <input type="text" id="goal-date" placeholder="Goal Date (yyyy-mm-dd)" class="hidden">
+    <button id="nextBtn" onclick="nextStep()">Next</button>
+    <button id="submitBtn" onclick="submitForm()" class="hidden">Submit</button>
+  </div>
+</div>
+
+<script src="loginsignup.js"></script>
+</body>
+</html>

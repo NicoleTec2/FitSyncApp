@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Exercise tracker</title>
+  <link rel="stylesheet" href="./Exercise.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercise Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Exercise Tracker</h2>
+  <div class="instructions">
+    <p><strong>Instructions:</strong> Select the type of exercise and enter the duration in minutes. Then click "Log Exercise" to record your workout.</p>
+  </div>
+  <div class="importance">
+    <p><strong>Importance:</strong> Regular exercise is essential for maintaining physical and mental health. Tracking your workouts helps you stay accountable and motivated to achieve your fitness goals.</p>
+  </div>
+  <div class="inspiration">
+    <p><strong>Inspiration:</strong> "The only bad workout is the one that didn't happen." - Unknown</p>
+  </div>
+  <div class="form-container">
+    <label for="exercise-type">Exercise Type:</label>
+    <select id="exercise-type">
+      <option value="running">Running</option>
+      <option value="walking">Walking</option>
+      <option value="HIT">HIT Exercise</option>
+      <option value="crossfit">Crossfit</option>
+      <option value="leg-workout">Leg Workout</option>
+      <option value="arm-workout">Arm Workout</option>
+      <option value="cardio">Cardio</option>
+    </select>
+    <label for="duration">Duration (minutes):</label>
+    <input type="number" id="duration">
+    <button onclick="logExercise()">Log Exercise</button>
+  </div>
+  <h3>Exercise History</h3>
+  <ul id="exercise-history"></ul>
+</div>
+
+<script src="Exercise.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./Exercise.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Example</title>
+  <style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #00BCD4; /* Cyan */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back-btn:hover {
+    background-color: #0097A7; /* Darker cyan on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Your content here -->
+  <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.location.href = "Home.html";
+  }
+</script>
+
+</body>
+</html>
+

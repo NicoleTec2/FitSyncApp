@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #B2EBF2; /* Very light BLUE */
+  color: #006064; /* BLUE */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: #B2EBF2; /* Light blue */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-btn {
+  background-color: #00BCD4; /* Cyan */
+  color: #fff; /* White */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.track-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.track-btn {
+  padding: 10px 20px;
+  background-color: #00BCD4; /* Cyan */
+  color: #fff; /* White */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.track-btn:hover {
+  background-color: #0097A7; /* Darker cyan on hover */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.article-container {
+  width: calc(50% - 20px); /* Adjust width to fit two items per row */
+  margin: 10px; /* Adjust margin for spacing */
+}
+
+.article-container img {
+  max-width: 100%; /* Ensure image stays within its container */
+  height: auto;
+  display: block; /* Make image a block element */
+}
+
+ul li {
+  margin-bottom: 10px; /* Increase margin for spacing */
+}

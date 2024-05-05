@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Hide the scrollbar */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #B2EBF2; /* Very light BLUE */
+      color: #006064; /* BLUE */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      height: 100%;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow-y: scroll; /* Enable scrolling within container */
+      scrollbar-width: none; /* Hide the scrollbar in Firefox */
+      -ms-overflow-style: none; /* Hide the scrollbar in IE/Edge */
+    }
+
+    .container::-webkit-scrollbar {
+      display: none; /* Hide the scrollbar in WebKit browsers */
+    }
+
+    .navbar {
+      background-color: #B2EBF2; /* Light blue */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .nav-btn {
+      background-color: #00BCD4; /* Cyan */
+      color: #fff; /* White */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .track-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .track-btn {
+      padding: 10px 20px;
+      background-color: #00BCD4; /* Cyan */
+      color: #fff; /* White */
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .track-btn:hover {
+      background-color: #0097A7; /* Darker cyan on hover */
+    }
+
+    .article-list {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .article-container {
+      width: calc(25% - 20px);
+      margin: 10px;
+    }
+
+    .article-container img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: #006064; /* Dark teal */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .help-section {
+      margin-top: 50px;
+    }
+
+    .faq {
+      text-align: left;
+      margin-bottom: 20px;
+      border: 1px solid #B2EBF2; /* Light blue */
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .faq h4 {
+      margin-top: 0;
+    }
+
+    .todo-list {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .todo-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .todo-item input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .congratulations {
+      color: #4CAF50; /* Green */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div id="home-content" class="container">
+  <div class="navbar">
+    <button class="nav-btn" onclick="window.location.href='Home.html'">Home</button>
+    <button class="nav-btn" onclick="window.location.href='Meals.html'">Meals</button>
+    <button class="nav-btn" onclick="window.location.href='Discover.html'">Discover</button>
+    <button class="nav-btn" onclick="window.location.href='Profile.html'">Profile</button>
+  </div>
+  <div class="intro-section">
+    <h2>Welcome to Your Fitness App!</h2>
+    <p>Welcome aboard! We're excited to help you on your journey towards better health and fitness. Here's a quick guide on how to make the most of our app:</p>
+    <div class="instructions">
+      <h3>1. Home</h3>
+      <p>This is your starting point. Here, you can track your progress, chek out new articles every day, create yout to do list and much more.</p>
+    </div>
+    <div class="instructions">
+      <h3>2. Meals</h3>
+      <p>Dive into the "Meals" section to meticulously track your daily intake. Record what you eat, and keep tabs on your macronutrient consumption to stay on top of your fitness game.</p>
+    </div>
+    <div class="instructions">
+      <h3>3. Discover</h3>
+      <p>In the "Discover" section you can explore new articles, videos, and health recommendations curated by experts in the field. Check it out every day for new tips and tricks.</p>
+    </div>
+    <div class="instructions">
+      <h3>4. Profile</h3>
+      <p> In the "Profile" section, you can customize your account settings and view your progress over time.</p>
+    </div>
+    <p>With these tools at your fingertips, you're equipped to embark on a transformative journey towards improved health, fitness, and well-being. Let's make every step count!</p>
+
+    <p>Our app also offers a variety of features to help you achieve your fitness goals:</p>
+
+  </div>
+  <h3>Track Your Progress</h3>
+  <div class="track-buttons">
+    <button class="track-btn" onclick="window.location.href='goal.html'">Goal</button>
+    <button class="track-btn" onclick="window.location.href='weight.html'">Weight</button>
+    <button class="track-btn" onclick="window.location.href='Meals.html'">Meals</button>
+    <button class="track-btn" onclick="window.location.href='Water.html'">Water</button>
+    <button class="track-btn" onclick="window.location.href='Exercise.html'">Exercise</button>
+  </div>
+  <h3>Articles</h3>
+  <ul class="article-list">
+    <li class="article-container">
+      <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxMTA3OTR8&ixlib=rb-4.0.3&q=85" alt="Article 1 Image">
+      <a href="#">7 Tips for Healthy Eating</a>
+    </li>
+    <li class="article-container">
+      <img src="https://images.unsplash.com/photo-1547919307-1ecb10702e6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxMTA4NDh8&ixlib=rb-4.0.3&q=85" alt="Article 2 Image">
+      <a href="#">Effective Workout Routines</a>
+    </li>
+    <li class="article-container">
+      <img src="https://images.unsplash.com/photo-1605539585404-a846f1193d19?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxMTA4ODF8&ixlib=rb-4.0.3&q=85" alt="Article 3 Image">
+      <a href="#">The Importance of Hydration</a>
+    </li>
+    <li class="article-container">
+      <img src="https://images.unsplash.com/photo-1514782831304-632d84503f6f?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxMTA5MDZ8&ixlib=rb-4.0.3&q=85" alt="Article 4 Image">
+      <a href="#">Setting Realistic Fitness Goals</a>
+    </li>
+  </ul>
+  <div class="todo-entry">
+    <h3>Enter To-Do List Item</h3>
+    <input type="text" id="user-todo" placeholder="Enter a to-do list item">
+    <button onclick="addTodo()">Add Item</button>
+  </div>
+  <div class="todo-list">
+    <h3>To-Do List</h3>
+    <div class="todo-item">
+      <input type="checkbox" id="todo1" name="todo1">
+      <label for="todo1">Complete morning workout</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="todo2" name="todo2">
+      <label for="todo2">Plan meals for the day</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="todo3" name="todo3">
+      <label for="todo3">Drink at least 8 glasses of water</label>
+    </div>
+    <div class="todo-item">
+      <input type="checkbox" id="todo4" name="todo4">
+      <label for="todo4">Review progress from last week</label>
+    </div>
+  </div>
+
+  <p>If you have any questions or need assistance along the way, don't hesitate to reach out. We're here to support you every step of the way. Let's crush those goals together!</p>
+
+  <div class="todo-entry">
+    <h3>Have any questions? Ask us here:</h3>
+    <input type="text" id="user-todo" placeholder="Enter your question here">
+    <button onclick="addTodo()">Enter</button>
+  </div>
+
+  <div class="help-section">
+    <h3>Frequently Asked Questions (FAQs)</h3>
+    <div class="faq">
+      <h4>How do I track my meals?</h4>
+      <p>To track your meals, click on the "Track Meals" button in the navigation bar and enter the details of your meals for the day.</p>
+    </div>
+    <div class="faq">
+      <h4>Can I customize my exercise plans?</h4>
+      <p>Yes, you can customize your exercise plans by clicking on the "Track Exercise" button and selecting exercises according to your preference and fitness level.</p>
+    </div>
+    <div class="faq">
+      <h4>How can I set fitness goals?</h4>
+      <p>To set fitness goals, navigate to the "Set Your Goals" page by clicking on the corresponding button in the navigation bar and follow the instructions to set your goals.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function addGoal() {
+    var goalInput = document.getElementById("user-goal");
+    var goal = goalInput.value;
+    var goalList = document.getElementById("goal-list");
+    var li = document.createElement("li");
+    li.textContent = goal;
+    goalList.appendChild(li);
+    goalInput.value = "";
+  }
+
+  function addTodo() {
+    var todoInput = document.getElementById("user-todo");
+    var todo = todoInput.value;
+    var todoList = document.getElementById("todo-list");
+    var div = document.createElement("div");
+    div.className = "todo-item";
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    var id = "todo" + (todoList.childElementCount + 1);
+    checkbox.id = id;
+    checkbox.name = "todo";
+    var label = document.createElement("label");
+    label.htmlFor = id;
+    label.textContent = todo;
+    div.appendChild(checkbox);
+    div.appendChild(label);
+    todoList.appendChild(div);
+    todoInput.value = "";
+  }
+
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+      if (this.checked) {
+        const label = this.nextElementSibling;
+        label.innerHTML += ' <span class="congratulations you have completed this item">Congratulations! You have completed this item.</span>';
+      } else {
+        const label = this.nextElementSibling;
+        label.innerHTML = label.textContent;
+      }
+    });
+  });
+</script>
+</body>
+</html>

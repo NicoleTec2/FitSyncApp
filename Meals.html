@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Meals tab, tracker, recipes and articles</title>
+  <link rel="stylesheet" href="./Meals.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal Tracker</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="home-content" class="container">
+  <div class="navbar">
+    <button class="nav-btn" onclick="window.location.href='Home.html'">Home</button>
+    <button class="nav-btn" onclick="window.location.href='Meals.html'">Meals</button>
+    <button class="nav-btn" onclick="window.location.href='Discover.html'">Discover</button>
+    <button class="nav-btn" onclick="window.location.href='Profile.html'">Profile</button>
+  </div>
+
+  <div class="form-container">
+    <h2>Meal Tracker</h2>
+    <p>Track your meals to maintain a healthy lifestyle and achieve your fitness goals!</p>
+    <p>To get started, simply input your meal type, food and grams consumed, on the mactonutrients tab imput the amount of carbs, protein, and fats you've consumed for each meal. Our app will calculate your total intake and provide recommendations based on your goals. Whether you're aiming to build muscle, lose weight, or maintain a balanced diet, tracking your macronutrients is essential for success.</p>
+    <p>Tracking meals is important for understanding your eating habits and making healthier choices.</p>
+    <p>"Your body is a reflection of your lifestyle."</p>
+    <label for="meal-type">Select Meal Type:</label>
+    <select id="meal-type">
+      <option value="breakfast">Breakfast</option>
+      <option value="snack">Snack</option>
+      <option value="lunch">Lunch</option>
+      <option value="dinner">Dinner</option>
+    </select>
+    <label for="food">Food:</label>
+    <input type="text" id="food">
+    <label for="grams">Grams:</label>
+    <input type="number" id="grams">
+
+
+    <button onclick="logMeal()">Log Meal</button>
+
+  </div>
+
+  <div class="history-container">
+    <h3>Meal History</h3>
+    <div id="breakfast-history" class="meal-history hidden">
+      <h4>Breakfast</h4>
+      <ul id="breakfast-list"></ul>
+    </div>
+    <div id="snack-history" class="meal-history hidden">
+      <h4>Snack</h4>
+      <ul id="snack-list"></ul>
+    </div>
+    <div id="lunch-history" class="meal-history hidden">
+      <h4>Lunch</h4>
+      <ul id="lunch-list"></ul>
+    </div>
+    <div id="dinner-history" class="meal-history hidden">
+      <h4>Dinner</h4>
+      <ul id="dinner-list"></ul>
+    </div>
+ 
+  </div>
+</div>
+ 
+
+<div class="container">
+  <!-- Recipes section -->
+  <h2>Recipes</h2>
+  <p>In addition to tracking your meals, you'll find a curated list of recommended meals for the day, tailored to your nutritional needs. These meals are designed to help you reach your goals while enjoying delicious and satisfying food options.</p>
+    <p>Don't forget to check out today's articles for valuable insights into nutrition, fitness, and overall wellness. Stay informed and motivated on your journey to a healthier lifestyle. Start tracking your meals and explore our recommended recipes and articles today!</p>
+  <div class="recipe-list">
+    <div class="recipe-item">
+      <h3>Carb-Free Recipes</h3>
+      <p>Carb-Free Recipe: Avocado and Chicken Lettuce Wraps
+<p>Ingredients:
+<p>-1 ripe avocado
+<p>-1 cup cooked chicken breast, shredded
+<p>-1/4 cup diced tomatoes
+<p>-2 tablespoons chopped cilantro
+<p>-Juice of 1 lime
+<p>-Salt and pepper to taste
+<p>-Lettuce leaves for wrapping
+<p>Instructions:
+In a bowl, mash the avocado with lime juice, salt, and pepper.
+Mix in shredded chicken, diced tomatoes, red onion, and cilantro.
+Spoon the avocado chicken mixture onto lettuce leaves.
+Roll up the lettuce leaves to form wraps.
+Serve and enjoy!
+     </p> Nutritional Facts (per serving):
+Calories: 250
+Protein: 18g
+Carbohydrates: 10g
+Fat: 16g</p>
+    </div>
+    <div class="recipe-item">
+      <h3>Sugar-Free Desserts</h3>
+      <p>Greek Yogurt Berry Parfait
+<p>Ingredients:
+<p>-1 cup Greek yogurt
+<p>-1/2 cup mixed berries (strawberries, blueberries, raspberries)
+<p>-1 tablespoon honey or stevia (optional)
+<p>Instructions:
+In a glass or bowl, layer Greek yogurt, mixed berries, and granola.
+Repeat layers until the glass or bowl is filled.
+Drizzle honey or sprinkle stevia over the top if desired.
+Serve immediately or refrigerate until ready to eat.
+      </p>Nutritional Facts (per serving):
+Calories: 200
+Protein: 10g
+Carbohydrates: 20g
+Fat: 8g
+    </div>
+    <div class="recipe-item">
+      <h3>High-Protein Meals</h3>
+      <p>Grilled Salmon with Asparagus
+<p>Ingredients:
+<p>-2 salmon fillets
+<p>-1 bunch asparagus, trimmed
+<p>-2 tablespoons olive oil
+<p>-2 cloves garlic, minced
+<p>-Salt and pepper to taste
+<p>-Lemon wedges for serving
+<p>Instructions:
+Preheat grill to medium-high heat.
+In a small bowl, mix together olive oil, minced garlic, salt, and pepper.
+Brush the salmon fillets and asparagus spears with the olive oil mixture.
+Place salmon fillets and asparagus on the grill.
+Grill for 4-5 minutes per side, or until salmon is cooked through and asparagus is tender.
+Remove from grill and serve with lemon wedges.
+     </p> Nutritional Facts (per serving):
+Calories: 300
+Protein: 25g
+Carbohydrates: 8g
+Fat: 20g</p>
+    </div>
+  </div>
+
+  <!-- Articles with images -->
+  <h2>Articles</h2>
+  <ul class="article-list">
+    <li>
+      <div class="article-container">
+        <img src="https://images.unsplash.com/photo-1521986329282-0436c1f1e212?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxOTU5NDl8&ixlib=rb-4.0.3&q=85" alt="Carb-Free Recipes" width="200">
+        <h3>The Role of Carbohydrates in Your Diet</h3>
+        <p>Learn about the importance of carbohydrates as a primary source of energy and how to make healthier carb choices.</p>
+
+
+        <div class="container">
+          <!-- Your content here -->
+          <button class="back-btn" onclick="goBack()">Go to article</button>
+        </div>
+
+      </div>
+    </li>
+    <li>
+      <div class="article-container">
+        <img src="https://images.unsplash.com/photo-1599749011290-2f86f7ea2b3e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxOTYwMTN8&ixlib=rb-4.0.3&q=85" alt="Sugar-Free Desserts" width="200">
+        <h3>Understanding Hidden Sugars in Your Food</h3>
+        <p> Discover the hidden sources of added sugars in common foods and how to reduce your sugar intake for better health.</p>
+
+        <div class="container">
+          <!-- Your content here -->
+          <button class="back-btn" onclick="goBack()">Go to article</button>
+        </div>
+
+      </div>
+    </li>
+    <li>
+      <div class="article-container">
+        <img src="https://images.unsplash.com/photo-1598514983318-2f64f8f4796c?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTQxOTU5ODF8&ixlib=rb-4.0.3&q=85" alt="High-Protein Meals" width="200">
+        <h3>The Importance of Protein for Muscle Growth and Repair</h3>
+        <p> Explore the vital role of protein in muscle repair and growth, as well as its significance in overall health and wellness.</p>
+
+        <div class="container">
+          <!-- Your content here -->
+          <button class="back-btn" onclick="goBack()">Go to article</button>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script src="Meals.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./Meals.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Example</title>
+  <style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #00BCD4; /* Cyan */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back-btn:hover {
+    background-color: #0097A7; /* Darker cyan on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Your content here -->
+  <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.location.href = "Home.html";
+  }
+</script>
+
+</body>
+</html>

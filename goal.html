@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Goal setting</title>
+  <link rel="stylesheet" href="./goal.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goal Setting</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Goal Setting</h2>
+  <p>Welcome to the Goal Setting page! Set and track your fitness goals to stay motivated and focused on your journey to a healthier lifestyle.</p>
+  
+  <div id="goal-form">
+    <h3>Set Your Goals</h3>
+    <input type="text" id="goal" placeholder="Enter your goal">
+    <input type="date" id="deadline">
+    <button onclick="addGoal()">Add Goal</button>
+  </div>
+  
+  <div id="goal-list">
+    <h3></h3>
+    <ul id="goals">
+
+        <div class="Goal">
+          <h3>My goals:</h3>
+          <div class="todo-item">
+
+          </div>
+      <!-- Goals will be displayed here -->
+    </ul>
+  </div>
+</div>
+
+<script src="goal.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./goal.js"></script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Example</title>
+  <style>
+  .container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .back-btn {
+    padding: 10px 20px;
+    background-color: #00BCD4; /* Cyan */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back-btn:hover {
+    background-color: #0097A7; /* Darker cyan on hover */
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Your content here -->
+  <button class="back-btn" onclick="goBack()">Back</button>
+</div>
+
+<script>
+  function goBack() {
+    window.location.href = "Home.html";
+  }
+</script>
+
+</body>
+</html>
+
